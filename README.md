@@ -10,6 +10,7 @@ Screenshot berikut menunjukkan hasil eksekusi program Character Manager, termasu
 ![Output Terminal](Screenshot/output-character-basic.png)
 
 3. Struktur Folder Project
+   
 CharacterManager/
 ├── out/
 │   ├── com/
@@ -30,7 +31,8 @@ CharacterManager/
 │   └── output-reference.png
 └── README.md
 
-4. Informasi Mahasiswa
+5. Informasi Mahasiswa
+   
 Nama Lengkap: Ravita Marsanda
 
 NIM: 253303621209
