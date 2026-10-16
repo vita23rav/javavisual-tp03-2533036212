@@ -39,7 +39,6 @@ Nama Lengkap: Ravita Marsanda
 NIM: 253303621209
 Mata Kuliah: Java Visual
 Link Google Docs TP03: [Buka Dokumen TP03](https://docs.google.com/document/d/1vhce2Y4HyO6x0SCRgWV_Nax_UEtUrbtKarFv6Gh-N2Q/edit?usp=sharing)
-
 ---
 
 # TP5 — Character Manager Sprint #2
@@ -95,3 +94,5 @@ Dokumen analisis reference, primitive value, static,
 equals(), dan encapsulation dapat dibaca melalui tautan berikut:
 
 Link Google Docs TP05: [Buka Dokumen Analisis TP05](https://docs.google.com/document/d/1GzebjEp3sTkrF4PuDUfzQFZfKf8m9ZaMpIXgwOyeQ6A/edit?usp=sharing)
+
+
