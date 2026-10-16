@@ -9,8 +9,9 @@ Screenshot berikut menunjukkan hasil eksekusi program Character Manager, termasu
 
 ![Output Terminal](Screenshot/output-character-basic.png)
 
+
 3. Struktur Folder Project
-   
+
 CharacterManager/
 ├── out/
 │   ├── com/
@@ -30,6 +31,7 @@ CharacterManager/
 │   ├── output-crud.png
 │   └── output-reference.png
 └── README.md
+
 
 5. Informasi Mahasiswa
    
