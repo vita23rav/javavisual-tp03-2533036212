@@ -91,7 +91,4 @@ Dengan demikian, penggunaan salinan daftar membantu menjaga enkapsulasi dan menc
 
 Dokumen analisis reference, primitive value, static,
 equals(), dan encapsulation dapat dibaca melalui tautan berikut:
-
 Link Google Docs TP05: [Buka Dokumen Analisis TP05](https://docs.google.com/document/d/1GzebjEp3sTkrF4PuDUfzQFZfKf8m9ZaMpIXgwOyeQ6A/edit?usp=sharing)
-
-
