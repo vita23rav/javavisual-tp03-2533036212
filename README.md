@@ -40,7 +40,6 @@ NIM: 253303621209
 Mata Kuliah: Java Visual
 Link Google Docs TP03: [Buka Dokumen TP03](https://docs.google.com/document/d/1vhce2Y4HyO6x0SCRgWV_Nax_UEtUrbtKarFv6Gh-N2Q/edit?usp=sharing)
 
-
 ---
 
 # TP5 — Character Manager Sprint #2
