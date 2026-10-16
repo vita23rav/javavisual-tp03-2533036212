@@ -11,7 +11,7 @@ Screenshot berikut menunjukkan hasil eksekusi program Character Manager, termasu
 
 
 3. Struktur Folder Project
-
+```text
 CharacterManager/
 ├── out/
 │   ├── com/
@@ -28,6 +28,7 @@ CharacterManager/
 ├── screenshots/
 │   └── output-terminal.png
 ├── Screenshot/
+│   ├── output-character-basic.png
 │   ├── output-crud.png
 │   └── output-reference.png
 └── README.md
