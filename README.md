@@ -9,7 +9,6 @@ Screenshot berikut menunjukkan hasil eksekusi program Character Manager, termasu
 
 ![Output Terminal](Screenshot/output-character-basic.png)
 
-
 3. Struktur Folder Project
 ```text
 CharacterManager/
@@ -33,15 +32,10 @@ CharacterManager/
 │   └── output-reference.png
 └── README.md
 
-
-5. Informasi Mahasiswa
-   
+4. Informasi Mahasiswa
 Nama Lengkap: Ravita Marsanda
-
 NIM: 253303621209
-
 Mata Kuliah: Java Visual
-
 Link Google Docs TP03: [Buka Dokumen TP03](https://docs.google.com/document/d/1vhce2Y4HyO6x0SCRgWV_Nax_UEtUrbtKarFv6Gh-N2Q/edit?usp=sharing)
 
 ---
@@ -63,14 +57,13 @@ karakter, analisis level, dan pengujian object reference.
 - `findStrongest()` — mencari karakter dengan level tertinggi.
 
 3. Bukti Output Program
-   
     Output CRUD dan Analistik
     ![Output CRUD](Screenshots/output-crud.png)
 
     Eksperimen Object Reference
     ![Output Reference](Screenshots/output-reference.png)
 
-5. Analisis Object Reference
+4. Analisis Object Reference
 Method `getAllCharacters()` pada class `CharacterManager` mengembalikan salinan daftar karakter menggunakan `new ArrayList<>(characters)`. Tujuannya adalah agar perubahan pada struktur daftar salinan tidak memengaruhi daftar karakter internal.
 
 Pengujian dilakukan dengan membuat salinan daftar karakter, kemudian mengosongkannya menggunakan method `clear()`. Hasil pengujian menunjukkan bahwa daftar salinan berisi 0 karakter, sedangkan daftar asli tetap berisi 3 karakter.
