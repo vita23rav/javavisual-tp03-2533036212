@@ -1,64 +1,100 @@
+
+import com.unpri.charactermanager.CharacterManager;
 import com.unpri.charactermanager.model.Character;
 import com.unpri.charactermanager.model.CharacterType;
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("=== Character Manager v0.1 ===");
+        System.out.println("=== Character Manager TP5 ===");
 
-        // Membuat 3 karakter
+        CharacterManager manager = new CharacterManager();
+
+        // 1. Menambahkan karakter
         Character hero = new Character(
             "Arjuna", CharacterType.WARRIOR, 5
         );
-
         Character wizard = new Character(
             "Merlin", CharacterType.MAGE, 3
         );
-
         Character scout = new Character(
             "Athena", CharacterType.ARCHER, 4
         );
 
-        // Menampilkan 3 karakter
-        System.out.println("\n=== Daftar Karakter ===");
-        System.out.println(hero);
-        System.out.println(wizard);
-        System.out.println(scout);
+        System.out.println("\n=== CREATE ===");
+        System.out.println("Arjuna: " + manager.addCharacter(hero));
+        System.out.println("Merlin: " + manager.addCharacter(wizard));
+        System.out.println("Athena: " + manager.addCharacter(scout));
 
-        // Demo level up
-        System.out.println("\n=== Demo Level Up ===");
-        System.out.println(hero.getName() + " level up!");
+        // 2. Menguji nama duplikat
+        System.out.println("\n=== CEK DUPLIKAT ===");
+        Character duplicate = new Character(
+            "Arjuna", CharacterType.MAGE, 2
+        );
+        System.out.println(
+            "Tambah Arjuna duplikat: "
+            + manager.addCharacter(duplicate)
+        );
 
-        hero.setLevel(hero.getLevel() + 1);
-
-        System.out.println("After level up: " + hero);
-
-        // Menampilkan informasi karakter
-        System.out.println("\n=== Informasi Karakter ===");
-        System.out.println("Nama: " + hero.getName());
-        System.out.println("Jenis: " + hero.getType());
-        System.out.println("HP: " + hero.getHitPoints());
-
-        // Demo fitur mana
-        System.out.println("\n=== Demo Mana ===");
-        wizard.setMana(50);
-
-        System.out.println("Mana " + wizard.getName()
-            + ": " + wizard.getMana());
-
-        // Demo isAlive()
-        System.out.println("\n=== Demo isAlive() ===");
-        System.out.println(hero.getName()
-            + " masih hidup: " + hero.isAlive());
-
-        // Pengujian validasi mana
-        System.out.println("\n=== Demo Validasi Mana ===");
-
-        try {
-            wizard.setMana(-10);
-        } catch (IllegalArgumentException e) {
-            System.out.println("Validasi berhasil: "
-                + e.getMessage());
+        // 3. Menampilkan seluruh karakter
+        System.out.println("\n=== READ ===");
+        for (Character c : manager.getAllCharacters()) {
+            System.out.println(c);
         }
+
+        // 4. Mencari karakter
+        System.out.println("\n=== FIND BY NAME ===");
+        System.out.println(manager.findByName("Merlin"));
+
+        // 5. Menghitung jumlah karakter
+        System.out.println("\n=== TOTAL KARAKTER ===");
+        System.out.println(manager.getTotalCharacters());
+
+        // 6. Mini-challenge: rata-rata level
+        System.out.println("\n=== AVERAGE LEVEL ===");
+        System.out.println(manager.getAverageLevel());
+
+        // 7. Mini-challenge: mencari berdasarkan tipe
+        System.out.println("\n=== FIND BY TYPE: WARRIOR ===");
+        System.out.println(
+            manager.findByType(CharacterType.WARRIOR)
+        );
+
+        // 8. Fitur analitik: karakter dengan level tertinggi
+        System.out.println("\n=== KARAKTER TERKUAT ===");
+        System.out.println(manager.findStrongest());
+
+        // 9. Eksperimen reference: daftar yang dikembalikan adalah salinan
+        System.out.println("\n=== EKSPERIMEN REFERENCE ===");
+        java.util.ArrayList<Character> copy =
+            manager.getAllCharacters();
+
+        copy.clear();
+
+        System.out.println(
+            "Isi daftar salinan setelah clear: " + copy.size()
+        );
+        System.out.println(
+            "Jumlah karakter asli: "
+            + manager.getTotalCharacters()
+        );
+
+        // 10. Menghapus karakter
+        System.out.println("\n=== DELETE ===");
+        System.out.println(
+            "Hapus Athena: " + manager.removeCharacter("Athena")
+        );
+        System.out.println(
+            "Jumlah setelah penghapusan: "
+            + manager.getTotalCharacters()
+        );
+
+        // 11. Menguji daftar kosong
+        System.out.println("\n=== UJI DAFTAR KOSONG ===");
+        CharacterManager emptyManager = new CharacterManager();
+        System.out.println(
+            "Rata-rata level daftar kosong: "
+            + emptyManager.getAverageLevel()
+        );
     }
 }
