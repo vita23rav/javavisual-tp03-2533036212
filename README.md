@@ -3,13 +3,12 @@
 
    Character Manager merupakan program berbasis Java yang digunakan untuk mengelola karakter dengan atribut dan perilaku        tertentu. Proyek ini menerapkan konsep pemrograman berorientasi objek, seperti class, encapsulation, constructor, dan        enum, untuk mengatur data serta perilaku karakter. Program dijalankan melalui terminal dan menampilkan informasi             karakter, termasuk status hidup melalui method isAlive().
 
-3. Screenshot Output Terminal
+2. Screenshot Output Terminal
 
    Screenshot berikut menunjukkan hasil eksekusi program Character Manager, termasuk informasi karakter dan hasil               pemanggilan method isAlive().
+   <img width="640" height="359" alt="Screenshots output-terminal" src="https://github.com/user-attachments/assets/2100e768-488a-4828-afa6-868187485677" />
 
-   ![Output Terminal](Screenshot/output-character-basic.png)
-
-5. Struktur Folder Project
+3. Struktur Folder Project
 ```text
 
 CharacterManager/
@@ -73,12 +72,12 @@ CharacterManager/
 4. Bukti Output Program
 
    Output CRUD dan Analistik
-    ![Output CRUD](Screenshots/output-crud.png)
+   <img width="640" height="359" alt="Screenshots output-crud tp05" src="https://github.com/user-attachments/assets/46ff2cd4-5d1c-4a48-b960-2350332c47cd" />
 
    Eksperimen Object Reference
-    ![Output Reference](Screenshots/output-reference.png)
+   <img width="640" height="359" alt="Screenshots output-reference tp05" src="https://github.com/user-attachments/assets/40cbaca4-a786-45db-a24f-8cd721b905a6" />
 
-5. Analisis Object Reference
+6. Analisis Object Reference
    Method `getAllCharacters()` pada class `CharacterManager` mengembalikan salinan daftar karakter menggunakan `new             ArrayList<>(characters)`. Tujuannya adalah agar perubahan pada struktur daftar salinan tidak memengaruhi daftar karakter     internal.
 
    Pengujian dilakukan dengan membuat salinan daftar karakter, kemudian mengosongkannya menggunakan method `clear()`. Hasil     pengujian menunjukkan bahwa daftar salinan berisi 0 karakter, sedangkan daftar asli tetap berisi 3 karakter.
@@ -112,12 +111,12 @@ CharacterManager/
 2. Screenshot MainWindow
 
    Sebelum Perubahan Data
-   ![Screenshot sebelum perubahan](Screenshots/sebelum.png)
+   <img width="640" height="359" alt="Screenshots sebelum tp08" src="https://github.com/user-attachments/assets/3dd28771-3d7d-4338-9839-290e5360edf4" />
 
    Screenshot ini menunjukkan lima karakter awal, yaitu Arjuna, Merlin, Athena, Hector, dan Luna. Total karakter adalah 5,      rata-rata level 4.00, dan karakter dengan level tertinggi adalah Hector pada level 6.
 
    Sesudah Perubahan Data
-   ![Screenshot sesudah perubahan](Screenshots/sesudah.png)
+   <img width="640" height="359" alt="Screenshots sesudah tp08" src="https://github.com/user-attachments/assets/3c80d693-aab0-4f49-b3e8-485688e0844e" />
 
    Setelah menambahkan Thor dengan tipe WARRIOR level 8 dan Ravita dengan tipe WARRIOR level 7, jumlah karakter menjadi 7.      Rata-rata level berubah menjadi 5.00, sedangkan Thor menjadi karakter dengan level tertinggi pada level 8.
 
@@ -164,23 +163,23 @@ CharacterManager/
 # TP10 — Theming, Properti Komponen & Analisis MVC
 
 1. Screenshot Sebelum dan Sesudah
-
+   
    **Sebelum (v0.3)**
-
-   ![Screenshot sebelum TP10](Screenshot/sebelumtp10.png)
+   
+   <img width="640" height="359" alt="Screenshots sebelum tp10" src="https://github.com/user-attachments/assets/64cceff6-b44d-4283-84c3-72fa49a14ee2" />
 
    **Sesudah (v0.4)**
+   
+   <img width="640" height="359" alt="Screenshots sesudah tp10" src="https://github.com/user-attachments/assets/3e0ce49d-ed99-4c9d-8b36-72a048d58b25" />
 
-   ![Screenshot sesudah TP10](Screenshot/sesudahtp10.png)
-
-2. Pemisahan Warna pada AppTheme dan Character
+3. Pemisahan Warna pada AppTheme dan Character
    Warna tampilan aplikasi disimpan di kelas `AppTheme` yang berada pada package `view` agar pengaturan visual terpusat dan     konsisten. Kelas `Character` pada package `model` bertanggung jawab menyimpan data karakter, seperti nama, role, level,      HP, dan Attack, bukan mengatur warna tampilannya. Pemisahan ini membuat perubahan tema tidak mengharuskan perubahan pada     model karakter. Pendekatan tersebut juga mendukung pola MVC dan mempermudah pemeliharaan aplikasi.
 
-3. Dua Properti Tambahan
+4. Dua Properti Tambahan
 
    **Tooltip HP/Attack:** menampilkan informasi HP dan Attack ketika kursor diarahkan ke kartu karakter. Tujuannya agar         pengguna dapat melihat detail karakter dengan mudah tanpa memenuhi tampilan kartu.
    **Border berdasarkan role:** garis tepi kartu mengikuti warna role karakter. Tujuannya agar perbedaan role lebih mudah       dikenali dan tampilan antarkartu lebih konsisten.
 
-4. Google Docs Bagian D
+5. Google Docs Bagian D
 
    **Tautan analisis:** [https://docs.google.com/document/d/1MfQJ8VF39tAgRKz8frrUosh0cDtyTOBKGv4JTDBQ_AA/edit?usp=sharing]
