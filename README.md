@@ -22,6 +22,9 @@ CharacterManager/
 │   ├── Screenshots sebelum tp10.png
 │   ├── Screenshots sesudah tp08.png
 │   └── Screenshots sesudah tp10.png
+│   ├── Screenshots Resize-Awal tp12.png
+│   ├── Screenshots Resize-Diperbesar tp12.png
+│   └── Screenshots Resize-Diperkecil tp12.png
 ├── src/
 │   ├── Main.java
 │   └── com/
@@ -183,3 +186,96 @@ CharacterManager/
 5. Google Docs Bagian D
 
    **Tautan analisis:** [https://docs.google.com/document/d/1MfQJ8VF39tAgRKz8frrUosh0cDtyTOBKGv4JTDBQ_AA/edit?usp=sharing]
+
+
+---
+
+
+# TP12 — Analisis Layout & MVC
+**A. Implementasi Layout**
+
+Pada TP12, aplikasi Character Manager dikembangkan menjadi versi v0.5 dengan menerapkan Layout Manager pada Java Swing. Aplikasi menggunakan BorderLayout sebagai layout utama dengan empat wilayah yang terisi, yaitu NORTH, CENTER, EAST, dan SOUTH.
+
+Implementasi layout pada aplikasi adalah sebagai berikut:
+   - NORTH: Menampilkan header aplikasi dan panel statistik menggunakan GridLayout 2x2.
+   - CENTER: Menampilkan daftar karakter yang dapat di-scroll menggunakan JScrollPane.
+   - EAST: Menampilkan legenda role karakter menggunakan BoxLayout.Y_AXIS.
+   - SOUTH: Menampilkan status aplikasi di sebelah kiri dan versi v0.5 di sebelah kanan.
+
+Daftar karakter berada di dalam JPanel yang menggunakan BoxLayout.Y_AXIS. Panel tersebut dimasukkan ke dalam JScrollPane agar pengguna dapat melihat seluruh kartu karakter meskipun jumlah karakter bertambah.
+
+Legenda role diturunkan dari CharacterType.values() sehingga seluruh role yang tersedia dapat ditampilkan secara otomatis. Warna dan font menggunakan konfigurasi dari AppTheme.
+
+Pada implementasi ini tidak digunakan setLayout(null) maupun pengaturan posisi manual menggunakan setBounds() pada MainWindow. Package model tetap tidak berubah.
+
+**B. Perluasan & Mini-Challenge**
+
+Pada TP12, aplikasi Character Manager ditambahkan beberapa fitur untuk meningkatkan tampilan dan informasi aplikasi.
+
+Fitur yang ditambahkan meliputi:
+   - Status bar dengan teks "Character Manager siap digunakan" di sebelah kiri dan versi "v0.5" di sebelah kanan.
+   - Minimal delapan karakter dengan variasi level dan role.
+   - Panel statistik tambahan menggunakan GridLayout 2x2.
+   - Informasi total karakter, rata-rata level, karakter terkuat, dan jumlah role.
+   - Legenda role yang menampilkan WARRIOR, MAGE, ARCHER, dan HEALER.
+   - Daftar karakter menggunakan JScrollPane dengan scrollbar vertikal.
+
+Panel statistik dipilih karena dapat menyajikan empat informasi penting secara teratur dalam dua baris dan dua kolom. Layout ini membuat informasi lebih mudah dibaca tanpa mengganggu daftar karakter utama.
+
+**C. Dokumentasi README**
+1. Wireframe Struktur Layout
+
+   Berikut adalah wireframe struktur panel pada aplikasi Character Manager v0.5.
+
+2. Screenshot Pengamatan Resize
+
+   Screenshot 1 — Ukuran Awal
+
+   Pada ukuran awal, aplikasi menampilkan judul Character Manager v0.5, statistik karakter, panel input, daftar karakter,
+   legenda role, dan status bar. Daftar karakter menggunakan scrollbar vertikal karena seluruh kartu karakter belum dapat
+   ditampilkan sekaligus.
+
+   Screenshot 2 — Jendela Diperbesar (Maximize)
+
+   Ketika jendela diperbesar, ruang tampilan aplikasi menjadi lebih luas. Daftar karakter terlihat lebih banyak dibandingkan
+   ukuran awal. Panel statistik, legenda role, dan status bar tetap berada pada posisi masing-masing. Scrollbar vertikal
+   masih terlihat karena jumlah kartu karakter melebihi ruang yang tersedia.
+
+   Screenshot 3 — Jendela Diperkecil
+
+   Ketika jendela diperkecil, ruang daftar karakter menjadi lebih terbatas. Beberapa kartu karakter tidak dapat ditampilkan
+   secara bersamaan. Scrollbar vertikal tetap tersedia di sisi kanan daftar karakter sehingga pengguna dapat melihat
+   karakter lainnya dengan melakukan scrolling.
+
+4. Tabel Pengamatan Resize
+
+
+5. Penjelasan Struktur Panel
+
+   Aplikasi Character Manager v0.5 menggunakan BorderLayout sebagai layout utama untuk membagi jendela menjadi beberapa
+   wilayah. Wilayah NORTH digunakan untuk header dan panel statistik, CENTER digunakan untuk daftar karakter, EAST digunakan
+   untuk legenda role, dan SOUTH digunakan untuk status bar. Daftar karakter disusun menggunakan BoxLayout.Y_AXIS dan
+   ditempatkan di dalam JScrollPane agar pengguna dapat melihat karakter lainnya melalui scrolling. Struktur panel ini
+   membuat tampilan aplikasi lebih rapi dan dapat menyesuaikan perubahan ukuran jendela.
+
+6. Alasan Panel Tambahan dan Layout yang Ditolak
+
+   Panel tambahan yang dibuat pada TP12 adalah panel statistik menggunakan GridLayout 2x2. Layout ini dipilih karena dapat
+   menyusun empat informasi statistik secara teratur dalam dua baris dan dua kolom. Informasi yang ditampilkan meliputi
+   total karakter, rata-rata level, karakter terkuat, dan jumlah role. Panel statistik diletakkan pada bagian NORTH di bawah
+   judul aplikasi agar informasi utama mudah dilihat oleh pengguna.
+
+   BoxLayout.Y_AXIS dipilih untuk menyusun kartu karakter dan legenda role secara vertikal. FlowLayout digunakan pada panel
+   input agar komponen input dan tombol tersusun secara horizontal.
+
+   Layout yang ditolak adalah setLayout(null) karena posisi dan ukuran komponen harus ditentukan secara manual menggunakan
+   setBounds(). Hal ini dapat menyebabkan tampilan tidak rapi ketika ukuran jendela berubah. GridLayout juga tidak dipilih
+   untuk daftar karakter utama karena setiap kartu lebih sesuai disusun secara vertikal dan ditampilkan melalui scrolling.
+
+7. Link Google Docs Bagian D
+
+   Dokumen Google Docs Analisis Layout & MVC:
+
+   [https://docs.google.com/document/d/18mFo_vSmwv3Lg73tkWLc6AzVvI-_XeOR_VmplPwLcBY/edit?usp=sharing]
+
+
