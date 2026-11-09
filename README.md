@@ -234,8 +234,8 @@ Panel statistik dipilih karena dapat menyajikan empat informasi penting secara t
 
    Screenshot 1 — Ukuran Awal
    
-   <img width="640" height="359" alt="Screenshots Resize-Awal tp12" src="https://github.com/user-attachments/assets/a52bd426
-   26c1-4ede-9158-3c275e078510" />
+   <img width="640" height="359" alt="Screenshots Resize-Awal tp12" src="https://github.com/user-attachments/assets/b0ddb6fa-9b3c-414f-b630-c4452579386d" />
+
    
    Pada ukuran awal, aplikasi menampilkan judul Character Manager v0.5, statistik karakter, panel input, daftar karakter,
    legenda role, dan status bar. Daftar karakter menggunakan scrollbar vertikal karena seluruh kartu karakter belum dapat
@@ -243,8 +243,8 @@ Panel statistik dipilih karena dapat menyajikan empat informasi penting secara t
 
    Screenshot 2 — Jendela Diperbesar (Maximize)
    
-   <img width="640" height="359" alt="Screenshots Resize-Diperbesar tp12" src="https://github.com/user
-   attachments/assets/8765eff4-1102-4fef-bf52-6b7211d93715" />
+   <img width="640" height="359" alt="Screenshots Resize-Diperbesar tp12" src="https://github.com/user-attachments/assets/feb267dd-bcfe-4101-9029-c8d1cfbddb77" />
+
 
    Ketika jendela diperbesar, ruang tampilan aplikasi menjadi lebih luas. Daftar karakter terlihat lebih banyak dibandingkan
    ukuran awal. Panel statistik, legenda role, dan status bar tetap berada pada posisi masing-masing. Scrollbar vertikal
@@ -252,8 +252,8 @@ Panel statistik dipilih karena dapat menyajikan empat informasi penting secara t
 
    Screenshot 3 — Jendela Diperkecil
 
-   <img width="640" height="359" alt="Screenshots Resize-Diperkecil tp12" src="https://github.com/user
-   attachments/assets/60cb47fe-ba81-4d2e-a3eb-d43922f83989" />
+   <img width="640" height="359" alt="Screenshots Resize-Diperkecil tp12" src="https://github.com/user-attachments/assets/932161c5-cd77-49aa-82be-3ef0ed89b371" />
+
 
    Ketika jendela diperkecil, ruang daftar karakter menjadi lebih terbatas. Beberapa kartu karakter tidak dapat ditampilkan
    secara bersamaan. Scrollbar vertikal tetap tersedia di sisi kanan daftar karakter sehingga pengguna dapat melihat
