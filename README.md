@@ -227,6 +227,9 @@ Panel statistik dipilih karena dapat menyajikan empat informasi penting secara t
 
    Berikut adalah wireframe struktur panel pada aplikasi Character Manager v0.5.
 
+   <img width="3374" height="2174" alt="wireframe" src="https://github.com/user-attachments/assets/e37bbdb3-d5f5-40c8-bca0-833aacfc2a35" />
+
+   
 2. Screenshot Pengamatan Resize
 
    Screenshot 1 — Ukuran Awal
@@ -257,6 +260,8 @@ Panel statistik dipilih karena dapat menyajikan empat informasi penting secara t
    karakter lainnya dengan melakukan scrolling.
 
 4. Tabel Pengamatan Resize
+
+   <img width="1536" height="1024" alt="Tabel Pengamatan Resize" src="https://github.com/user-attachments/assets/42cdce09-142b-4585-90a9-767c1ace95c4" />
 
 
 5. Penjelasan Struktur Panel
